@@ -95,7 +95,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "mandani docs",
-   "link_count": 1,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -109,9 +109,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "desai doc",
+   "link_count": 0,
+   "link_to": "desai doc",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-08-19 10:41:26.358408",
+ "modified": "2025-08-20 15:14:33.492658",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "jinal",
