@@ -5,21 +5,22 @@ app_description = "text change"
 app_email = "khushim@gmail.com"
 app_license = "mit"
 
-# Include custom JS and CSS in Desk
+# ===== Desk Customizations =====
 app_include_css = "/assets/galaxynext/css/galaxyerp.css"
 app_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
-    "/assets/galaxynext/js/custom_about.js"
+    "/assets/galaxynext/js/custom_about.js",
+    "/assets/galaxynext/js/toolbar/help_dropdown.js"  # ✅ Custom Help Dropdown JS
 ]
 
-# Include custom JS and CSS in Web Templates
+# ===== Web Templates Customizations =====
 web_include_css = "/assets/galaxynext/css/galaxyerp.css"
 web_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
     "/assets/galaxynext/js/custom_about.js"
 ]
 
-# Website context for logo overrides
+# ===== Website Context Overrides =====
 website_context = {
     "favicon": "/assets/galaxynext/images/galaxynext_logo.png",
     "splash_image": "/assets/galaxynext/images/galaxynext_logo.png",
@@ -29,29 +30,34 @@ website_context = {
     "login_with_email_link": True
 }
 
-# Override favicon for all contexts
+# ===== Global Favicon =====
 favicon = "/assets/galaxynext/images/galaxynext_logo.png"
 
-# Override the About dialog JS from Frappe
+# ===== JS Override Files (Override Core Files) =====
 override_include_files = {
     "frappe/public/js/frappe/ui/toolbar/about.js": "/assets/galaxynext/js/custom_about.js",
     "frappe/public/js/frappe/help/onboarding.js": "/assets/galaxynext/js/custom_onboarding.js",
     "erpnext/erpnext/setup/onboarding_step/create_an_item/create_an_item.json": "/assets/galaxynext/js/create_an_item.json"
 }
 
+# ===== Onboarding Step Override =====
 onboarding_steps = {
     "Item": "galaxynext.setup.onboarding_step.create_an_item.create_an_item"
 }
 
-
-# App logo for top left corner
+# ===== App Logo (Top Left) =====
 app_logo_url = "/assets/galaxynext/images/galaxynext_logo.png"
 
-# ✅ Add this line for translation override:
+# ===== Language Support =====
 translated_languages = ["en"]
 
-# If needed in the future, you can override whitelisted methods here:
-# override_whitelisted_methods = {
+# ===== ✅ Help Dropdown Whitelisted Override (IMPORTANT) =====
+override_whitelisted_methods = {
+    "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
+}
+
+# ==== (Optional future use) Other Overrides Example ====
+# override_whitelisted_methods.update({
 #     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
 #     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
-# }
+# })
