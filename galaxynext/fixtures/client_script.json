@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "tina doc",
+  "enabled": 1,
+  "modified": "2025-08-21 15:46:33.208852",
+  "module": null,
+  "name": "testing",
+  "script": "frappe.ui.form.on('tina doc', {\r\n    refresh(frm) {\r\n        frm.add_custom_button('Say Hello', () => {\r\n            frappe.msgprint(__('Hello from Galaxynext App!'));\r\n        });\r\n    }\r\n});\r\n",
+  "view": "Form"
+ }
+]
