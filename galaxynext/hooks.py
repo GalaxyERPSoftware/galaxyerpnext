@@ -66,7 +66,7 @@ fixtures = [
     	{
        	     "dt": "Client Script",
              "filters": [["name", "in", [
-                 "testing"
+                 "testing2"
               ]]]
         }
     		

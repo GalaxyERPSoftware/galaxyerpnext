@@ -2,12 +2,12 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "tina doc",
+  "dt": "kava doc",
   "enabled": 1,
-  "modified": "2025-08-21 15:46:33.208852",
+  "modified": "2025-08-21 16:01:37.627075",
   "module": null,
-  "name": "testing",
-  "script": "frappe.ui.form.on('tina doc', {\r\n    refresh(frm) {\r\n        frm.add_custom_button('Say Hello', () => {\r\n            frappe.msgprint(__('Hello from Galaxynext App!'));\r\n        });\r\n    }\r\n});\r\n",
+  "name": "testing2",
+  "script": "frappe.ui.form.on('kava doc', {\r\n    refresh(frm) {\r\n        frm.add_custom_button('Say Hello', () => {\r\n            frappe.msgprint(__('Hello from Galaxynext App!'));\r\n        });\r\n    }\r\n});\r\n",
   "view": "Form"
  }
 ]
