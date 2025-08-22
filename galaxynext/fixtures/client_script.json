@@ -2,6 +2,17 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
+  "dt": "account doc",
+  "enabled": 1,
+  "modified": "2025-08-22 15:38:41.061413",
+  "module": null,
+  "name": "testing4",
+  "script": "frappe.ui.form.on('account doc', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
   "dt": "kava doc",
   "enabled": 1,
   "modified": "2025-08-21 16:01:37.627075",
@@ -19,6 +30,17 @@
   "module": null,
   "name": "testing3",
   "script": "frappe.ui.form.on('disha doc', {\r\n    refresh(frm) {\r\n        frm.add_custom_button('Mark as Verified', () => {\r\n            frm.set_value('status', 'Verified');\r\n            frappe.show_alert({\r\n                message: __('Document marked as Verified'),\r\n                indicator: 'green'\r\n            });\r\n        });\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Project",
+  "enabled": 1,
+  "modified": "2025-08-22 12:21:57.376979",
+  "module": null,
+  "name": "project script",
+  "script": "frappe.ui.form.on('Project', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});\r\n",
   "view": "Form"
  }
 ]
