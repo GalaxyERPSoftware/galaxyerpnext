@@ -42,5 +42,16 @@
   "name": "project script",
   "script": "frappe.ui.form.on('Project', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});\r\n",
   "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Issue",
+  "enabled": 1,
+  "modified": "2025-08-22 16:35:56.583807",
+  "module": null,
+  "name": "testing5",
+  "script": "frappe.ui.form.on('Issue', {\r\n    refresh(frm) {\r\n        // --- Effect 1: Auto-fill client_title if empty and highlight ---\r\n        if (!frm.doc.client_title) {\r\n            frm.set_value('client_title', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Title auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n        frm.fields_dict.client_title.$wrapper.css({\r\n            'background-color': '#fff3e0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // --- Effect 2: Add custom button to mark document_state ---\r\n        frm.add_custom_button('Approve Document', () => {\r\n            frm.set_value('document_state', 'Approved');\r\n            frappe.show_alert({\r\n                message: __('Document marked as Approved'),\r\n                indicator: 'green'\r\n            });\r\n        });\r\n    }\r\n});\r\n",
+  "view": "Form"
  }
 ]
