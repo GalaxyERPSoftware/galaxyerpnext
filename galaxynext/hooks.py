@@ -70,7 +70,8 @@ fixtures = [
 		"testing3",
 		"testing4",
 		"testing5",
-		"project script"
+		"project script",
+		"quality goal client script"
               ]]]
         }
     		
