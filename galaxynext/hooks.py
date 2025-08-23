@@ -61,3 +61,18 @@ override_whitelisted_methods = {
 #     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
 #     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
 # })
+fixtures = [
+    	{
+       	     "dt": "Client Script",
+             "filters": [["name", "in", [
+                 "testing2",
+		"testing3",
+		"testing4",
+		"testing5",
+		"project script"
+		"customer testing script",
+		"supplier testing script"
+              ]]]
+        }
+    		
+]
