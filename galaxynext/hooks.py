@@ -71,8 +71,14 @@ fixtures = [
 		"testing5",
 		"project script"
 		"customer testing script",
-		"supplier testing script"
+		"supplier testing script",
+		"jab card testing client script"
               ]]]
-        }
-    		
+        },
+	{
+	     "dt": "Server Script",
+             "filters": [["name", "in", [
+                 "job card test server script"
+    	      ]]]
+	}
 ]
