@@ -53,5 +53,16 @@
   "name": "supplier testing script",
   "script": "frappe.ui.form.on('Supplier', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n",
   "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Job Card",
+  "enabled": 1,
+  "modified": "2025-08-23 15:22:38.120540",
+  "module": null,
+  "name": "jab card testing client script",
+  "script": "frappe.ui.form.on('Job Card', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
  }
 ]
