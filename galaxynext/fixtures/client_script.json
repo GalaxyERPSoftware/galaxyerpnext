@@ -2,6 +2,28 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
+  "dt": "Project",
+  "enabled": 1,
+  "modified": "2025-08-22 12:21:57.376979",
+  "module": null,
+  "name": "project script",
+  "script": "frappe.ui.form.on('Project', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Customer",
+  "enabled": 1,
+  "modified": "2025-08-23 12:02:04.981672",
+  "module": null,
+  "name": "customer testing script",
+  "script": " frappe.ui.form.on('Customer', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
   "dt": "account doc",
   "enabled": 1,
   "modified": "2025-08-22 15:38:41.061413",
@@ -63,6 +85,17 @@
   "module": null,
   "name": "jab card testing client script",
   "script": "frappe.ui.form.on('Job Card', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Work Order",
+  "enabled": 1,
+  "modified": "2025-08-25 11:05:45.100020",
+  "module": null,
+  "name": "work order client script",
+  "script": "frappe.ui.form.on('Work Order', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});",
   "view": "Form"
  }
 ]
