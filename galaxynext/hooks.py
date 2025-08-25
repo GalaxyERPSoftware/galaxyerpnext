@@ -74,7 +74,8 @@ fixtures = [
             "customer testing script",
             "supplier testing script",
             "jab card testing client script",
-	    "work order client script"
+	    "work order client script",
+	    "campaign client script"
         ]]]
     },
     {
@@ -84,4 +85,3 @@ fixtures = [
         ]]]
     }
 ]
-
