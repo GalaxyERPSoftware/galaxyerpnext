@@ -2,17 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "Opportunity",
-  "enabled": 1,
-  "modified": "2025-08-25 16:26:07.133879",
-  "module": null,
-  "name": "opportunity client script",
-  "script": "frappe.ui.form.on(\"Opportunity\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
-  "view": "Form"
-},
- {
-  "docstatus": 0,
-  "doctype": "Client Script",
   "dt": "Contract",
   "enabled": 1,
   "modified": "2025-08-25 16:43:11.309979",
@@ -134,12 +123,12 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "Lead",
+  "dt": "Prospect",
   "enabled": 1,
-  "modified": "2025-08-26 15:03:09.029573",
+  "modified": "2025-08-26 15:04:54.971402",
   "module": null,
-  "name": "lead client script",
-  "script": "frappe.ui.form.on(\"Lead\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
+  "name": "prospect client script",
+  "script": "frappe.ui.form.on(\"Prospect\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
   "view": "Form"
  }
 ]
