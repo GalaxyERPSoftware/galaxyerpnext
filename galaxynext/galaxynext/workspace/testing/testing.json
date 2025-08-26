@@ -1,17 +1,17 @@
 {
  "charts": [],
- "content": "[{\"id\":\"VepG3durKm\",\"type\":\"card\",\"data\":{\"card_name\":\"parmar doc list\",\"col\":4}}]",
- "creation": "2025-08-19 17:24:06.834995",
+ "content": "[{\"id\":\"VepG3durKm\",\"type\":\"card\",\"data\":{\"card_name\":\"testing doc view\",\"col\":4}}]",
+ "creation": "2025-08-20 11:59:06.525700",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "external-link",
+ "icon": "shrink",
  "idx": 0,
  "indicator_color": "green",
  "is_hidden": 0,
- "label": "kishan",
+ "label": "Testing",
  "links": [
   {
    "dependencies": "",
@@ -94,7 +94,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "parmar doc list",
+   "label": "testing doc view",
+   "link_count": 1,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -102,28 +103,18 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "parmar doc",
+   "label": "Testing doc",
    "link_count": 0,
-   "link_to": "parmar doc",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "tested doc",
-   "link_count": 0,
-   "link_to": "tested doc",
+   "link_to": "Testing doc",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2025-08-19 17:26:17.747082",
+ "modified": "2025-08-20 12:00:32.458362",
  "modified_by": "Administrator",
  "module": "galaxynext",
- "name": "kishan",
+ "name": "Testing",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -133,5 +124,5 @@
  "roles": [],
  "sequence_id": 13.2,
  "shortcuts": [],
- "title": "kishan"
+ "title": "Testing"
 }

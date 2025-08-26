@@ -113,9 +113,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "desai doc",
    "link_count": 0,
    "link_to": "desai doc",
+   "label": "disha doc",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -125,12 +125,13 @@
    "is_query_report": 0,
    "label": "jenish doc",
    "link_count": 0,
-   "link_to": "jenish doc",
+   "link_to": "account doc",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
+
  "modified": "2025-08-20 15:40:51.422881",
  "modified_by": "Administrator",
  "module": "galaxynext",
