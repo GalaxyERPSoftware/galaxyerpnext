@@ -76,7 +76,8 @@ fixtures = [
             "jab card testing client script",
 	    "work order client script",
 	    "campaign client script",
-	    "opportunity client script"
+	    "opportunity client script",
+	    "lead client script"	
         ]]]
     },
     {
