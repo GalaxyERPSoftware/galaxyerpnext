@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-08-19 16:52:39.385003",
+ "creation": "2025-08-26 14:55:52.967398",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -26,10 +26,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-28 11:26:50.031874",
+ "modified": "2025-08-26 16:57:23.860804",
  "modified_by": "Administrator",
  "module": "galaxynext",
- "name": "my doc",
+ "name": "testing web",
  "owner": "Administrator",
  "permissions": [
   {
