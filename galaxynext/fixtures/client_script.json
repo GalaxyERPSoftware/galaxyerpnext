@@ -121,25 +121,36 @@
   "view": "Form"
  },
  {
-  "docstatus": 0,
-  "doctype": "Client Script",
-  "dt": "Lead",
-  "enabled": 1,
-  "modified": "2025-08-26 15:03:09.029573",
-  "module": null,
-  "name": "lead client script",
-  "script": "frappe.ui.form.on(\"Lead\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
-  "view": "Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "Client Script",
-  "dt": "parmar doc",
-  "enabled": 1,
-  "modified": "2025-08-26 16:58:37.744880",
-  "module": null,
-  "name": "parmar client scrip",
-  "script": "frappe.ui.form.on(\"parmar doc\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
-  "view": "Form"
- }
+    "docstatus": 0,
+    "doctype": "Client Script",
+    "dt": "Lead",
+    "enabled": 1,
+    "modified": "2025-08-26 15:03:09.029573",
+    "module": null,
+    "name": "lead client script",
+    "script": "frappe.ui.form.on(\"Lead\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
+    "view": "Form"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Client Script",
+    "dt": "parmar doc",
+    "enabled": 1,
+    "modified": "2025-08-26 16:58:37.744880",
+    "module": null,
+    "name": "parmar client scrip",
+    "script": "frappe.ui.form.on(\"parmar doc\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
+    "view": "Form"
+  },
+  {
+    "docstatus": 0,
+    "doctype": "Client Script",
+    "dt": "tested doc",
+    "enabled": 1,
+    "modified": "2025-08-28 12:21:15.619302",
+    "module": null,
+    "name": "testing client script",
+    "script": "frappe.ui.form.on(\"tested doc\", {\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    }\r\n});\r\n",
+    "view": "Form"
+  }
 ]
