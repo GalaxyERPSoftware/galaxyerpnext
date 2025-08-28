@@ -2,17 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "Contract",
-  "enabled": 1,
-  "modified": "2025-08-25 16:43:11.309979",
-  "module": null,
-  "name": "contract client script",
-  "script": "frappe.ui.form.on(\"Contract\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
-  "view": "Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "Client Script",
   "dt": "Customer",
   "enabled": 1,
   "modified": "2025-08-23 12:02:04.981672",
@@ -123,12 +112,12 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "Prospect",
+  "dt": "tested doc",
   "enabled": 1,
-  "modified": "2025-08-26 15:04:54.971402",
+  "modified": "2025-08-28 12:21:15.619302",
   "module": null,
-  "name": "prospect client script",
-  "script": "frappe.ui.form.on(\"Prospect\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
+  "name": "testing client script",
+  "script": "frappe.ui.form.on(\"tested doc\", {\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    }\r\n});\r\n",
   "view": "Form"
  }
 ]
