@@ -5,18 +5,28 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_6s7u"
+  "test_checkbox",
+  "test_remarks"
  ],
  "fields": [
   {
-   "fieldname": "section_break_6s7u",
-   "fieldtype": "Section Break"
+   "default": "0",
+   "fieldname": "test_checkbox",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Test Checkbox"
+  },
+  {
+   "fieldname": "test_remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Remarks"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 16:52:39.385003",
+ "modified": "2025-08-28 11:26:50.031874",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "my doc",
