@@ -17,5 +17,24 @@
   "reference_doctype": "Job Card",
   "script": "# Auto-fill Test Value 1 with uppercase of Test Value 2\r\nif doc.test_value_2:\r\n    doc.test_value_1 = doc.test_value_2.upper()\r\n\r\n# If both fields empty → set default\r\nif not doc.test_value_1 and not doc.test_value_2:\r\n    doc.test_value_1 = \"AUTO-GENERATED\"\r\n    doc.test_value_2 = \"demo\"\r\n\r\n# Show popup for testing\r\nfrappe.msgprint(f\"Job Card Server Script executed for: {doc.name}\")\r\n",
   "script_type": "DocType Event"
+ },
+ {
+  "allow_guest": 0,
+  "api_method": null,
+  "cron_format": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Server Script",
+  "doctype_event": "Before Save",
+  "enable_rate_limit": 0,
+  "event_frequency": "All",
+  "modified": "2025-08-29 10:40:08.603518",
+  "module": null,
+  "name": "testing server script",
+  "rate_limit_count": 5,
+  "rate_limit_seconds": 86400,
+  "reference_doctype": "testing_script",
+  "script": "# Generate short code from Title\r\nif doc.title:\r\n    words = doc.title.strip().split()\r\n    doc.short_code = \"\".join([w[0].upper() for w in words])\r\nelse:\r\n    frappe.throw(\"Title cannot be empty.\")",
+  "script_type": "DocType Event"
  }
 ]
