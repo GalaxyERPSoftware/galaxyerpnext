@@ -1,22 +1,22 @@
-// console.log("✅ Custom Grid Override Loaded.......k");
+console.log("✅ Custom Grid Override Loaded.......k");
 
-// // === Override GridRow (validation change) ===
-// frappe.ui.form.GridRow = class CustomGridRow extends frappe.ui.form.GridRow {
-//     validate_columns_width() {
-//         let total_column_width = 0.0;
+// === Override GridRow (validation change) ===
+frappe.ui.form.GridRow = class CustomGridRow extends frappe.ui.form.GridRow {
+    validate_columns_width() {
+        let total_column_width = 0.0;
 
-//         this.selected_columns_for_grid.forEach((row) => {
-//             if (row.columns && row.columns > 0) {
-//                 total_column_width += cint(row.columns);
-//             }
-//         });
+        this.selected_columns_for_grid.forEach((row) => {
+            if (row.columns && row.columns > 0) {
+                total_column_width += cint(row.columns);
+            }
+        });
 
-//         // 🔥 Now allow up to 15 instead of 10
-//         if (total_column_width && total_column_width > 15) {
-//             frappe.throw(__("The total column width cannot be more than 15."));
-//         }
-//     }
-// };
+        // 🔥 Now allow up to 15 instead of 10
+        if (total_column_width && total_column_width > 15) {
+            frappe.throw(__("The total column width cannot be more than 15."));
+        }
+    }
+};
 
 // // === Override Grid (setup_visible_columns change) ===
 // frappe.ui.form.Grid = class CustomGrid extends frappe.ui.form.Grid {
