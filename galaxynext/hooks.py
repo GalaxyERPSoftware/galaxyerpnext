@@ -80,6 +80,8 @@ fixtures = [
             "test script",
 	    "doctype client script"
 
+
+
         ]]]
     },
     {
