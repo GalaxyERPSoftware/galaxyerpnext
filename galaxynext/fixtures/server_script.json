@@ -28,13 +28,13 @@
   "doctype_event": "Before Save",
   "enable_rate_limit": 0,
   "event_frequency": "All",
-  "modified": "2025-08-29 10:40:08.603518",
+  "modified": "2025-08-29 10:32:56.676652",
   "module": null,
-  "name": "testing server script",
+  "name": "test doc server script",
   "rate_limit_count": 5,
   "rate_limit_seconds": 86400,
-  "reference_doctype": "testing_script",
-  "script": "# Generate short code from Title\r\nif doc.title:\r\n    words = doc.title.strip().split()\r\n    doc.short_code = \"\".join([w[0].upper() for w in words])\r\nelse:\r\n    frappe.throw(\"Title cannot be empty.\")",
+  "reference_doctype": "test_doc",
+  "script": "# This script ensures the title is not empty and formats it properly\r\nif not doc.title:\r\n    frappe.throw(\"Title is mandatory. Please enter a title.\")\r\n\r\n# Optional: Automatically format title (capitalize first letter)\r\ndoc.title = doc.title.strip().title()\r\n",
   "script_type": "DocType Event"
  }
 ]
