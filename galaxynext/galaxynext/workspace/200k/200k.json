@@ -16,6 +16,7 @@
   {
    "dependencies": "",
    "hidden": 0,
+   "is_query_report": 0,
    "label": "Activity Log",
    "link_count": 0,
    "link_to": "Activity Log",
@@ -120,7 +121,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-08-29 10:40:37.853395",
+ "modified": "2025-08-29 16:01:47.884472",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "200k",
