@@ -85,7 +85,8 @@ fixtures = [
     {
         "dt": "Server Script",
         "filters": [["name", "in", [
-            "job card test server script"
+            "job card test server script",
+	    "test doc server script"
         ]]]
     }
 ]
