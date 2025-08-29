@@ -78,7 +78,10 @@ fixtures = [
 	    "campaign client script",
 	    "contract client script",
 	    "prospect client script",
-            "testing client script"
+        "testing client script"
+	    "testing web client script",
+	    "test script"
+
         ]]]
     },
     {
