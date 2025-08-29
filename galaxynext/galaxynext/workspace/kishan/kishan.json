@@ -95,7 +95,6 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "parmar doc list",
-   "link_count": 1,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -106,6 +105,16 @@
    "label": "parmar doc",
    "link_count": 0,
    "link_to": "parmar doc",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tested doc",
+   "link_count": 0,
+   "link_to": "tested doc",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"

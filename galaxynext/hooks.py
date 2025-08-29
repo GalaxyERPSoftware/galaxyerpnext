@@ -56,12 +56,6 @@ override_whitelisted_methods = {
     "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
 }
 
-# ==== (Optional future use) Other Overrides Example ====
-# override_whitelisted_methods.update({
-#     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
-#     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
-# })
-
 fixtures = [
     {
         "dt": "Client Script",
@@ -74,21 +68,27 @@ fixtures = [
             "customer testing script",
             "supplier testing script",
             "jab card testing client script",
-	    "work order client script",
-	    "campaign client script",
-	    "contract client script",
-	    "prospect client script",
-	    "testing web client script",
-	    "test script",
-	    "doctype client script",
-	    "mandaliya doc script"
+	        "work order client script",
+            "campaign client script",
+            "opportunity client script",
+            "lead client script",
+            "parmar client scrip",
+            "contract client script",
+            "prospect client script",
+            "testing client script",
+            "testing web client script",
+            "test script",
+	        "doctype client script"
+	        "doctype testing client script"
+
         ]]]
     },
     {
         "dt": "Server Script",
         "filters": [["name", "in", [
             "job card test server script",
-	    "test doc server script"
+            "test doc server script",
+            "testing server script"
         ]]]
     }
 ]

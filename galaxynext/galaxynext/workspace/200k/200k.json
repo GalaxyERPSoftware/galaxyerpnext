@@ -95,7 +95,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "200k doc list",
-   "link_count": 1,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -109,9 +109,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "testing script",
+   "link_count": 0,
+   "link_to": "testing_script",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-08-19 10:05:50.600066",
+ "modified": "2025-08-29 16:01:47.884472",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "200k",
