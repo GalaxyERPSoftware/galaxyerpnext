@@ -56,7 +56,6 @@ override_whitelisted_methods = {
     "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
 }
 
-# ===== Fixtures =====
 fixtures = [
     {
         "dt": "Client Script",
@@ -78,8 +77,7 @@ fixtures = [
             "prospect client script",
             "testing client script",
             "testing web client script",
-            "test script",
-	    "doctype testing client script"
+            "test script"
         ]]]
     },
     {
@@ -90,9 +88,4 @@ fixtures = [
             "testing server script"
         ]]]
     }
-]
-
-# ===== 🔹 Custom Overrides =====
-after_migrate = [
-    "galaxynext.overrides.grid_row_override.override_gridrow"
 ]

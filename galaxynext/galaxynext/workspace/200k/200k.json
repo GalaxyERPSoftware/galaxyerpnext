@@ -16,7 +16,6 @@
   {
    "dependencies": "",
    "hidden": 0,
-   "is_query_report": 0,
    "label": "Activity Log",
    "link_count": 0,
    "link_to": "Activity Log",
@@ -95,7 +94,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "200k doc list",
-   "link_count": 3,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -119,19 +118,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "doctype test",
-   "link_count": 0,
-   "link_to": "doctype_testing",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2025-08-29 15:31:39.360437",
+ "modified": "2025-08-29 10:40:37.853395",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "200k",
