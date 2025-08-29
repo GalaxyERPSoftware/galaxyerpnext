@@ -77,9 +77,8 @@ fixtures = [
             "prospect client script",
             "testing client script",
             "testing web client script",
-            "test script",
-	    "doctype client script"
-
+            "test script"
+	        "doctype client script"
 
 
         ]]]
