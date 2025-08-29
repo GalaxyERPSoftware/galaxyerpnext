@@ -80,7 +80,8 @@ fixtures = [
 	    "prospect client script",
 	    "testing web client script",
 	    "test script",
-	    "doctype client script"
+	    "doctype client script",
+	    "mandaliya doc script"
         ]]]
     },
     {
