@@ -11,6 +11,11 @@ app_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
     "/assets/galaxynext/js/custom_about.js",
     "/assets/galaxynext/js/toolbar/help_dropdown.js"  # ✅ Custom Help Dropdown JS
+      "/assets/galaxynext/js/override_grid.js"  ,  
+    "/assets/galaxynext/js/custom_grid_row.js",
+    "/assets/galaxynext/js/grid_row_override.js"
+        # ✅ Single Grid Override (allow >10 columns)
+    # "/assets/galaxynext/js/grid_row_override.js"         # ✅ Grid Row Override (custom validation)
 ]
 
 # ===== Web Templates Customizations =====
@@ -56,8 +61,11 @@ override_whitelisted_methods = {
     "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
 }
 
-# ==== (Optional future use) Other Overrides Example ====
-# override_whitelisted_methods.update({
-#     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
-#     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
-# })
+fixtures = [
+    {
+        "dt": "Client Script",
+        "filters": [["name", "in", [
+            "ERPNext client script"
+        ]]]
+    }
+]

@@ -1,32 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-08-19 16:52:39.385003",
+ "creation": "2025-08-22 10:15:00.521968",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "column10_section",
-  "table_dhwf"
+  "column_main_table_view_section",
+  "column_table"
  ],
  "fields": [
   {
-   "fieldname": "table_dhwf",
-   "fieldtype": "Table",
-   "options": "Testing doc"
+   "fieldname": "column_main_table_view_section",
+   "fieldtype": "Section Break",
+   "label": "column_main_table_view"
   },
   {
-   "fieldname": "column10_section",
-   "fieldtype": "Section Break",
-   "label": "column>10"
+   "fieldname": "column_table",
+   "fieldtype": "Table",
+   "label": "column_table",
+   "options": "column child"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-23 12:25:50.633156",
+ "modified": "2025-08-22 10:27:49.024364",
  "modified_by": "Administrator",
  "module": "galaxynext",
- "name": "my doc",
+ "name": "Column doc",
  "owner": "Administrator",
  "permissions": [
   {
@@ -42,7 +43,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",

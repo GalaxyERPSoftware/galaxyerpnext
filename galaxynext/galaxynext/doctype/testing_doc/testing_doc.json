@@ -5,36 +5,109 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_jlhe"
+  "testing_doc_section",
+  "user",
+  "uom",
+  "activity_type",
+  "customer",
+  "supplier",
+  "bulk",
+  "address",
+  "bom",
+  "bank_account",
+  "brand",
+  "budjet",
+  "account"
  ],
  "fields": [
   {
-   "fieldname": "section_break_jlhe",
-   "fieldtype": "Section Break"
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Link",
+   "label": "Activity Type ",
+   "options": "Activity Type"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "customer ",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "supplier ",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "bulk",
+   "fieldtype": "Link",
+   "label": "Bulk ",
+   "options": "Bulk Update"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "bom ",
+   "options": "BOM Item"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account ",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "brand ",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "budjet",
+   "fieldtype": "Link",
+   "label": "budjet ",
+   "options": "Budget"
+  },
+  {
+   "fieldname": "testing_doc_section",
+   "fieldtype": "Section Break",
+   "label": "testing doc"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "account"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2025-08-20 11:59:35.636332",
+ "modified": "2025-08-21 10:31:34.988936",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "Testing doc",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",

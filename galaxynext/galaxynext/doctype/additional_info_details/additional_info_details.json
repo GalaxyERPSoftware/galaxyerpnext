@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-20 17:50:18.837898",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bulk",
+  "address",
+  "bom",
+  "bank_account",
+  "brand",
+  "budget"
+ ],
+ "fields": [
+  {
+   "fieldname": "bulk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bulk "
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "address "
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "brand "
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "budget "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-20 18:14:36.829897",
+ "modified_by": "Administrator",
+ "module": "galaxynext",
+ "name": "Additional Info Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
