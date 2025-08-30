@@ -11,6 +11,11 @@ app_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
     "/assets/galaxynext/js/custom_about.js",
     "/assets/galaxynext/js/toolbar/help_dropdown.js"  # ✅ Custom Help Dropdown JS
+      "/assets/galaxynext/js/override_grid.js"  ,  
+    "/assets/galaxynext/js/custom_grid_row.js",
+    "/assets/galaxynext/js/grid_row_override.js"
+        # ✅ Single Grid Override (allow >10 columns)
+    # "/assets/galaxynext/js/grid_row_override.js"         # ✅ Grid Row Override (custom validation)
 ]
 
 # ===== Web Templates Customizations =====
@@ -76,7 +81,8 @@ fixtures = [
 	    "doctype client script",
 	    "doctype testing client script",
          "GERP client script",
-       "GERPNext client script"
+       "GERPNext client script",
+           "ERPNext client script"
 
         ]]]
     },

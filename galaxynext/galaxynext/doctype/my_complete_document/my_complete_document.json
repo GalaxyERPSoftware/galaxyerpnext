@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-20 18:16:55.754617",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info_table",
+  "additional_info_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_info_table",
+   "fieldtype": "Table",
+   "label": "Basic Information",
+   "options": "Basic Info Details"
+  },
+  {
+   "fieldname": "additional_info_table",
+   "fieldtype": "Table",
+   "label": "Additional Information",
+   "options": "Additional Info Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-20 18:20:44.430808",
+ "modified_by": "Administrator",
+ "module": "galaxynext",
+ "name": "My Complete Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
