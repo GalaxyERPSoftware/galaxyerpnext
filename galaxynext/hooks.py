@@ -60,36 +60,30 @@ fixtures = [
     {
         "dt": "Client Script",
         "filters": [["name", "in", [
-            "testing2",
-            "testing3",
-            "testing4",
-            "testing5",
             "project script",
             "customer testing script",
             "supplier testing script",
             "jab card testing client script",
-            "work order client script",
+	        "work order client script",
             "campaign client script",
             "opportunity client script",
             "lead client script",
-            "parmar client scrip",
             "contract client script",
             "prospect client script",
-            "testing client script",
+             "testing client script",
             "testing web client script",
             "test script",
 	    "doctype client script",
 	    "doctype testing client script"
-
+         "GERP client script"
+           
 
         ]]]
     },
     {
         "dt": "Server Script",
         "filters": [["name", "in", [
-            "job card test server script",
-            "test doc server script",
-            "testing server script"
+            "job card test server script"
         ]]]
     }
 ]

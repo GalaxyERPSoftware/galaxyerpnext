@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-08-19 11:02:04.166621",
+ "creation": "2025-08-30 10:51:28.300156",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -19,10 +19,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-29 16:58:17.886065",
+ "modified": "2025-08-30 10:51:50.120117",
  "modified_by": "Administrator",
  "module": "galaxynext",
- "name": "mandaliya doc",
+ "name": "GERP_DOC",
  "owner": "Administrator",
  "permissions": [
   {

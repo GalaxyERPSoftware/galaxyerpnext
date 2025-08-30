@@ -2,6 +2,83 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
+  "dt": "Customer",
+  "enabled": 1,
+  "modified": "2025-08-23 12:02:04.981672",
+  "module": null,
+  "name": "customer testing script",
+  "script": " frappe.ui.form.on('Customer', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Supplier",
+  "enabled": 1,
+  "modified": "2025-08-23 13:02:09.588259",
+  "module": null,
+  "name": "supplier testing script",
+  "script": "frappe.ui.form.on('Supplier', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Job Card",
+  "enabled": 1,
+  "modified": "2025-08-23 15:22:38.120540",
+  "module": null,
+  "name": "jab card testing client script",
+  "script": "frappe.ui.form.on('Job Card', {\r\n    test_value_1: function(frm) {\r\n        // જયારે Test Value 1 change થાય\r\n        frappe.show_alert({\r\n            message: __('You typed: {0}', [frm.doc.test_value_1]),\r\n            indicator: 'blue'\r\n        }, 5);\r\n    },\r\n\r\n    test_value_2: function(frm) {\r\n        // Test Value 2 change થાય ત્યારે Test Value 1 auto update\r\n        if (frm.doc.test_value_2) {\r\n            frm.set_value('test_value_1', frm.doc.test_value_2.toUpperCase());\r\n            frappe.msgprint(__('Test Value 1 auto-filled with UPPERCASE of Test Value 2'));\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Work Order",
+  "enabled": 1,
+  "modified": "2025-08-25 11:05:45.100020",
+  "module": null,
+  "name": "work order client script",
+  "script": "frappe.ui.form.on('Work Order', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Project",
+  "enabled": 1,
+  "modified": "2025-08-22 12:21:57.376979",
+  "module": null,
+  "name": "project script",
+  "script": "frappe.ui.form.on('Project', {\r\n    refresh(frm) {\r\n        // Add a label highlight effect\r\n        frm.fields_dict.client_name.$wrapper.css({\r\n            'background-color': '#e0ffe0',\r\n            'font-weight': 'bold'\r\n        });\r\n\r\n        // Automatically set a field if empty\r\n        if (!frm.doc.client_name) {\r\n            frm.set_value('client_name', 'Auto-filled by script');\r\n            frappe.show_alert({ \r\n                message: __('Client Name auto-filled'), \r\n                indicator: 'green' \r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Campaign",
+  "enabled": 1,
+  "modified": "2025-08-25 15:08:52.904598",
+  "module": "galaxynext",
+  "name": "campaign client script",
+  "script": "frappe.ui.form.on(\"Campaign\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Prospect",
+  "enabled": 1,
+  "modified": "2025-08-26 15:04:54.971402",
+  "module": null,
+  "name": "prospect client script",
+  "script": "frappe.ui.form.on(\"Prospect\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
   "dt": "Opportunity",
   "enabled": 1,
   "modified": "2025-08-25 16:26:07.133879",
@@ -24,28 +101,6 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "parmar doc",
-  "enabled": 1,
-  "modified": "2025-08-26 16:58:37.744880",
-  "module": null,
-  "name": "parmar client scrip",
-  "script": "frappe.ui.form.on(\"parmar doc\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});\r\n",
-  "view": "Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "Client Script",
-  "dt": "tested doc",
-  "enabled": 1,
-  "modified": "2025-08-28 12:21:15.619302",
-  "module": null,
-  "name": "testing client script",
-  "script": "frappe.ui.form.on(\"tested doc\", {\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    }\r\n});\r\n",
-  "view": "Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "Client Script",
   "dt": "Contract",
   "enabled": 1,
   "modified": "2025-08-25 16:43:11.309979",
@@ -57,12 +112,12 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
-  "dt": "doctype_testing",
+  "dt": "GERP_DOC",
   "enabled": 1,
-  "modified": "2025-08-29 15:28:31.945154",
+  "modified": "2025-08-30 10:53:06.732001",
   "module": null,
-  "name": "doctype testing client script",
-  "script": "frappe.ui.form.on('doctype_testing', {  // Replace with your Doctype\r\n    // Trigger when the form loads\r\n    onload: function(frm) {\r\n        // If title is empty, set default value\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n        }\r\n\r\n        // Show message with current title\r\n        frappe.msgprint(`Current Title: ${frm.doc.title}`);\r\n        console.log(\"Form Loaded:\", frm.doc);\r\n    },\r\n\r\n    // Trigger when the 'title' field changes\r\n    title: function(frm) {\r\n        console.log(\"Title changed to:\", frm.doc.title);\r\n        frappe.msgprint(`You updated the Title to: ${frm.doc.title}`);\r\n    },\r\n\r\n    // Trigger before saving the form\r\n    before_save: function(frm) {\r\n        // Ensure title is not empty\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n            frappe.msgprint(\"Title was empty, default value applied!\");\r\n        }\r\n    }\r\n});",
+  "name": "GERP client script",
+  "script": "frappe.ui.form.on('GERP_DOC', {  // Replace with your Doctype\r\n    // Trigger when the form loads\r\n    onload: function(frm) {\r\n        // If title is empty, set default value\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n        }\r\n\r\n        // Show message with current title\r\n        frappe.msgprint(`Current Title: ${frm.doc.title}`);\r\n        console.log(\"Form Loaded:\", frm.doc);\r\n    },\r\n\r\n    // Trigger when the 'title' field changes\r\n    title: function(frm) {\r\n        console.log(\"Title changed to:\", frm.doc.title);\r\n        frappe.msgprint(`You updated the Title to: ${frm.doc.title}`);\r\n    },\r\n\r\n    // Trigger before saving the form\r\n    before_save: function(frm) {\r\n        // Ensure title is not empty\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n            frappe.msgprint(\"Title was empty, default value applied!\");\r\n        }\r\n    }\r\n});\r\n",
   "view": "Form"
  }
 ]
