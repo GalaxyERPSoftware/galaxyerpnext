@@ -108,5 +108,16 @@
   "name": "contract client script",
   "script": "frappe.ui.form.on(\"Contract\", {\r\n    refresh(frm) {\r\n        // Page refresh થતાની સાથે message બતાવશે\r\n        frappe.msgprint(\"Contact form loaded successfully!\");\r\n    },\r\n\r\n    test_checkbox(frm) {\r\n        if (frm.doc.test_checkbox) {\r\n            frappe.msgprint(\"✅ Checkbox selected!\");\r\n        } else {\r\n            frappe.msgprint(\"❌ Checkbox unselected!\");\r\n        }\r\n    },\r\n\r\n    test_remarks(frm) {\r\n        if (frm.doc.test_remarks) {\r\n            frappe.show_alert({\r\n                message: __(\"You entered: \" + frm.doc.test_remarks),\r\n                indicator: \"green\"\r\n            }, 5);\r\n        }\r\n    }\r\n});",
   "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "GERP_DOC",
+  "enabled": 1,
+  "modified": "2025-08-30 10:53:06.732001",
+  "module": null,
+  "name": "GERP client script",
+  "script": "frappe.ui.form.on('GERP_DOC', {  // Replace with your Doctype\r\n    // Trigger when the form loads\r\n    onload: function(frm) {\r\n        // If title is empty, set default value\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n        }\r\n\r\n        // Show message with current title\r\n        frappe.msgprint(`Current Title: ${frm.doc.title}`);\r\n        console.log(\"Form Loaded:\", frm.doc);\r\n    },\r\n\r\n    // Trigger when the 'title' field changes\r\n    title: function(frm) {\r\n        console.log(\"Title changed to:\", frm.doc.title);\r\n        frappe.msgprint(`You updated the Title to: ${frm.doc.title}`);\r\n    },\r\n\r\n    // Trigger before saving the form\r\n    before_save: function(frm) {\r\n        // Ensure title is not empty\r\n        if (!frm.doc.title) {\r\n            frm.set_value('title', 'Default Title');\r\n            frappe.msgprint(\"Title was empty, default value applied!\");\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
  }
 ]
