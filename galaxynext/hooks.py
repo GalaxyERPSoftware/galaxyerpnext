@@ -78,8 +78,10 @@ fixtures = [
             "testing client script",
             "testing web client script",
             "test script",
-	        "doctype client script"
-	        "doctype testing client script"
+	    "doctype client script",
+	    "doctype testing client script"
+
+
         ]]]
     },
     {
