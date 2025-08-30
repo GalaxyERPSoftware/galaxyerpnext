@@ -74,16 +74,17 @@ fixtures = [
             "testing web client script",
             "test script",
 	    "doctype client script",
-	    "doctype testing client script"
-         "GERP client script"
-           
+	    "doctype testing client script",
+         "GERP client script",
+       "GERPNext client script"
 
         ]]]
     },
     {
         "dt": "Server Script",
         "filters": [["name", "in", [
-            "job card test server script"
+            "job card test server script",
+            "testing server script"
         ]]]
     }
 ]
