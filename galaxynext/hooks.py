@@ -56,7 +56,6 @@ app_logo_url = "/assets/galaxynext/images/galaxynext_logo.png"
 # ===== Language Support =====
 translated_languages = ["en"]
 
-<<<<<<< HEAD
 # ===== ✅ Help Dropdown Whitelisted Override (IMPORTANT) =====
 override_whitelisted_methods = {
     "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
@@ -95,23 +94,3 @@ fixtures = [
         ]]]
     }
 ]
-=======
-# If needed in the future, you can override whitelisted methods here:
-# override_whitelisted_methods = {
-#     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
-#     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
-# }
-fixtures = [
-	{
-		"dt":"Client Script",
-		"filters":[["name","in",[
-			"Quantity validation for job inward",
-			"click",
-			"Auto Ganareted",
-			"unit",
-			"Job Inward companywise warehouse",
-			"Job Date"
-	    ]]]
-	}
-]
->>>>>>> sujal
