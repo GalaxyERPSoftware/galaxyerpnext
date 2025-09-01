@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Design Import",
+  "enabled": 1,
+  "modified": "2025-09-01 11:48:35.668434",
+  "module": null,
+  "name": "Table hide and show",
+  "script": "frappe.ui.form.on('Design Import', {\r\n    refresh: function(frm) {\r\n        // By default hide both tables\r\n        frm.toggle_display(\"original_design_portion\", 0);\r\n        frm.toggle_display(\"production_design_portion\", 0);\r\n\r\n        // Handle tab click\r\n        setTimeout(() => {\r\n            // Original Tab click event\r\n            $('[data-fieldname=\"original_tab\"]').on(\"click\", function() {\r\n                frm.toggle_display(\"original_design_portion\", 1);\r\n                frm.toggle_display(\"production_design_portion\", 0);\r\n            });\r\n\r\n            // Production Tab click event\r\n            $('[data-fieldname=\"production_tab\"]').on(\"click\", function() {\r\n                frm.toggle_display(\"original_design_portion\", 0);\r\n                frm.toggle_display(\"production_design_portion\", 1);\r\n            });\r\n        }, 500);\r\n    }\r\n});\r\n",
+  "view": "Form"
+ }
+]
