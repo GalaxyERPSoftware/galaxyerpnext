@@ -5,6 +5,11 @@ app_description = "company"
 app_email = "j@gmail.com"
 app_license = "mit"
 
+
+boot_session = "packedge_india.api.custom_boot_session"
+desk_module = "packedge_india"
+
+
 # Apps
 # ------------------
 

@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-01 11:36:22.183064",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "original_design_portion_section",
+  "color_sample",
+  "color_name",
+  "pixel",
+  "percentage",
+  "match_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "original_design_portion_section",
+   "fieldtype": "Section Break",
+   "label": "Original Design Portion"
+  },
+  {
+   "fieldname": "color_sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Color Sample"
+  },
+  {
+   "fieldname": "color_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Color Name"
+  },
+  {
+   "fieldname": "pixel",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pixel"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "match_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Match Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-01 11:36:22.183064",
+ "modified_by": "Administrator",
+ "module": "packedge_india",
+ "name": "Production Design Portion",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

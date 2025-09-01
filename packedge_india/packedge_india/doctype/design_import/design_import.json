@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DSG-IMP-.YYYY.-.######",
+ "creation": "2025-09-01 10:35:47.090137",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5ywc",
+  "naming_series",
+  "original_file_attach",
+  "import_button_original",
+  "submit_button",
+  "amended_from",
+  "column_break_dmef",
+  "bom_selection",
+  "production_file_attach",
+  "import_button_production",
+  "cancel_button",
+  "design_info_section_section",
+  "design_name",
+  "width",
+  "height",
+  "paper_width",
+  "paper_height",
+  "column_break_nvvl",
+  "full_path",
+  "dpi_vertical",
+  "dpi_horizontal",
+  "tabs_original_vs_production_section",
+  "tab_1_column",
+  "original_tab",
+  "production_tab_column",
+  "production_tab",
+  "section_break_amkp",
+  "original_design_portion",
+  "production_design_portion"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5ywc",
+   "fieldtype": "Section Break",
+   "label": "Header Potion "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Design Import",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Import ID",
+   "options": "DSG-IMP-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bom_selection",
+   "fieldtype": "Link",
+   "label": "BOM Selection",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "original_file_attach",
+   "fieldtype": "Attach",
+   "label": "Original File Attach",
+   "reqd": 1
+  },
+  {
+   "fieldname": "production_file_attach",
+   "fieldtype": "Attach",
+   "label": "Production File Attach"
+  },
+  {
+   "fieldname": "column_break_dmef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "import_button_original",
+   "fieldtype": "Button",
+   "label": "Import Button (Original)"
+  },
+  {
+   "fieldname": "import_button_production",
+   "fieldtype": "Button",
+   "label": "Import Button (Production)"
+  },
+  {
+   "fieldname": "submit_button",
+   "fieldtype": "Button",
+   "label": "Submit Button"
+  },
+  {
+   "fieldname": "cancel_button",
+   "fieldtype": "Button",
+   "label": "Cancel Button"
+  },
+  {
+   "fieldname": "design_info_section_section",
+   "fieldtype": "Section Break",
+   "label": "Design Info Section"
+  },
+  {
+   "fieldname": "design_name",
+   "fieldtype": "Data",
+   "label": "Design Name"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "label": "Width"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "label": "Height"
+  },
+  {
+   "fieldname": "full_path",
+   "fieldtype": "Small Text",
+   "label": "Full Path"
+  },
+  {
+   "fieldname": "dpi_horizontal",
+   "fieldtype": "Int",
+   "label": "DPI Horizontal"
+  },
+  {
+   "fieldname": "dpi_vertical",
+   "fieldtype": "Int",
+   "label": "DPI Vertical"
+  },
+  {
+   "fieldname": "paper_width",
+   "fieldtype": "Int",
+   "label": "Paper Width"
+  },
+  {
+   "fieldname": "paper_height",
+   "fieldtype": "Int",
+   "label": "Paper Height"
+  },
+  {
+   "fieldname": "column_break_nvvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tabs_original_vs_production_section",
+   "fieldtype": "Section Break",
+   "label": "Tabs (Original vs Production)"
+  },
+  {
+   "fieldname": "original_tab",
+   "fieldtype": "Button",
+   "label": "Original Tab"
+  },
+  {
+   "fieldname": "production_tab_column",
+   "fieldtype": "Column Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "production_tab",
+   "fieldtype": "Button",
+   "label": "Production Tab"
+  },
+  {
+   "fieldname": "tab_1_column",
+   "fieldtype": "Column Break",
+   "label": "Tab 1"
+  },
+  {
+   "fieldname": "section_break_amkp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_design_portion",
+   "fieldtype": "Table",
+   "label": "Production Design Portion ",
+   "options": "Production Design Portion"
+  },
+  {
+   "fieldname": "original_design_portion",
+   "fieldtype": "Table",
+   "label": "Original Design Portion",
+   "options": "Original Design Portion"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-01 16:29:56.014422",
+ "modified_by": "Administrator",
+ "module": "packedge_india",
+ "name": "Design Import",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
