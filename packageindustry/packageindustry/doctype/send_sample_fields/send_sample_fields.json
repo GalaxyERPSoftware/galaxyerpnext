@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-23 15:25:20.502174",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_name",
+  "send_sample_mobile_no",
+  "delivery_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "send_sample_mobile_no",
+   "fieldtype": "Data",
+   "label": "Send Sample Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Delivery Address",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-26 10:04:15.995103",
+ "modified_by": "Administrator",
+ "module": "packageindustry",
+ "name": "Send Sample Fields",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

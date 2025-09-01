@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:lead_status_name",
+ "creation": "2025-07-22 18:08:15.225758",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_status_name",
+  "show_call_again_date",
+  "show_reason",
+  "show_contact_fields",
+  "show_date_received",
+  "show_amount_received",
+  "send_quotation",
+  "upload_file",
+  "send_file_to_mobile_no",
+  "send_file_to_email",
+  "upload_final_photo",
+  "send_final_file_to_mobile_no",
+  "receive_date",
+  "receive_photo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_status_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead Status Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "show_call_again_date",
+   "fieldtype": "Check",
+   "label": "Show Call Again Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_reason",
+   "fieldtype": "Check",
+   "label": "Show Reason"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_contact_fields",
+   "fieldtype": "Check",
+   "label": "Show Contact Fields"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_date_received",
+   "fieldtype": "Check",
+   "label": "Show Date Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_amount_received",
+   "fieldtype": "Check",
+   "label": "Show Amount Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_quotation",
+   "fieldtype": "Check",
+   "label": "Send Quotation Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "upload_file",
+   "fieldtype": "Check",
+   "label": "Upload File"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_file_to_mobile_no",
+   "fieldtype": "Check",
+   "label": "Send File To Mobile No"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_file_to_email",
+   "fieldtype": "Check",
+   "label": "Send File To Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "upload_final_photo",
+   "fieldtype": "Check",
+   "label": "Upload Final Photo"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_final_file_to_mobile_no",
+   "fieldtype": "Check",
+   "label": "Send Final File To Mobile No"
+  },
+  {
+   "default": "0",
+   "fieldname": "receive_date",
+   "fieldtype": "Check",
+   "label": "Receive Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "receive_photo",
+   "fieldtype": "Check",
+   "label": "Receive Photo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lead Status Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-01 14:30:34.811577",
+ "modified_by": "Administrator",
+ "module": "packageindustry",
+ "name": "Lead Status Master",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

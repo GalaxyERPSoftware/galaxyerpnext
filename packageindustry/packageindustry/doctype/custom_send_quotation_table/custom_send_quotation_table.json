@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-24 10:49:31.130041",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_quotation_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_quotation_table",
+   "fieldtype": "Table",
+   "label": "Custom Quotation Table",
+   "options": "Custom Send Quotation Table Fields",
+   "reqd": 1,
+   "width": "120"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-25 14:57:46.133270",
+ "modified_by": "Administrator",
+ "module": "packageindustry",
+ "name": "Custom Send Quotation Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
