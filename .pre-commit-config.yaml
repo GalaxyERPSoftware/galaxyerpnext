@@ -2,13 +2,12 @@ exclude: 'node_modules|.git'
 default_stages: [pre-commit]
 fail_fast: false
 
-
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
-        files: "galaxynext.*"
+        files: "packageindustry.*"
         exclude: ".*json$|.*txt$|.*csv|.*md|.*svg"
       - id: check-merge-conflict
       - id: check-ast
@@ -38,13 +37,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                galaxynext/public/dist/.*|
+                packageindustry/public/dist/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                galaxynext/templates/includes/.*|
-                galaxynext/public/js/lib/.*
+                packageindustry/templates/includes/.*|
+                packageindustry/public/js/lib/.*
             )$
-
 
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v8.44.0
@@ -55,12 +53,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                galaxynext/public/dist/.*|
+                packageindustry/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                galaxynext/templates/includes/.*|
-                galaxynext/public/js/lib/.*
+                packageindustry/templates/includes/.*|
+                packageindustry/public/js/lib/.*
             )$
 
 ci:

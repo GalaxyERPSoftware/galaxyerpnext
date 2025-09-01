@@ -4,6 +4,13 @@ authors = [
     { name = "khushi", email = "khushim@gmail.com"}
 ]
 description = "text change"
+
+name = "packageindustry"
+authors = [
+    { name = "sujal jethva", email = "sujal@gmail.com"}
+]
+description = "Custom ERPNext module for managing Package Industry operations"
+
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
