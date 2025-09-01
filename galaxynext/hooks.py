@@ -5,27 +5,21 @@ app_description = "text change"
 app_email = "khushim@gmail.com"
 app_license = "mit"
 
-# ===== Desk Customizations =====
+# Include custom JS and CSS in Desk
 app_include_css = "/assets/galaxynext/css/galaxyerp.css"
 app_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
-    "/assets/galaxynext/js/custom_about.js",
-    "/assets/galaxynext/js/toolbar/help_dropdown.js"  # ✅ Custom Help Dropdown JS
-      "/assets/galaxynext/js/override_grid.js"  ,  
-    "/assets/galaxynext/js/custom_grid_row.js",
-    "/assets/galaxynext/js/grid_row_override.js"
-        # ✅ Single Grid Override (allow >10 columns)
-    # "/assets/galaxynext/js/grid_row_override.js"         # ✅ Grid Row Override (custom validation)
+    "/assets/galaxynext/js/custom_about.js"
 ]
 
-# ===== Web Templates Customizations =====
+# Include custom JS and CSS in Web Templates
 web_include_css = "/assets/galaxynext/css/galaxyerp.css"
 web_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
     "/assets/galaxynext/js/custom_about.js"
 ]
 
-# ===== Website Context Overrides =====
+# Website context for logo overrides
 website_context = {
     "favicon": "/assets/galaxynext/images/galaxynext_logo.png",
     "splash_image": "/assets/galaxynext/images/galaxynext_logo.png",
@@ -35,62 +29,42 @@ website_context = {
     "login_with_email_link": True
 }
 
-# ===== Global Favicon =====
+# Override favicon for all contexts
 favicon = "/assets/galaxynext/images/galaxynext_logo.png"
 
-# ===== JS Override Files (Override Core Files) =====
+# Override the About dialog JS from Frappe
 override_include_files = {
     "frappe/public/js/frappe/ui/toolbar/about.js": "/assets/galaxynext/js/custom_about.js",
     "frappe/public/js/frappe/help/onboarding.js": "/assets/galaxynext/js/custom_onboarding.js",
     "erpnext/erpnext/setup/onboarding_step/create_an_item/create_an_item.json": "/assets/galaxynext/js/create_an_item.json"
 }
 
-# ===== Onboarding Step Override =====
 onboarding_steps = {
     "Item": "galaxynext.setup.onboarding_step.create_an_item.create_an_item"
 }
 
-# ===== App Logo (Top Left) =====
+
+# App logo for top left corner
 app_logo_url = "/assets/galaxynext/images/galaxynext_logo.png"
 
-# ===== Language Support =====
+# ✅ Add this line for translation override:
 translated_languages = ["en"]
 
-# ===== ✅ Help Dropdown Whitelisted Override (IMPORTANT) =====
-override_whitelisted_methods = {
-    "frappe.desk.utils.get_help_links": "galaxynext.utils.custom_toolbar.get_help_links"
-}
-
+# If needed in the future, you can override whitelisted methods here:
+# override_whitelisted_methods = {
+#     "frappe.widgets.onboarding_widget.get_onboarding_data": "galaxynext.utils.onboarding_widget_override.get_onboarding_widget_data_override",
+#     "frappe.widgets.onboarding_widget.get_step_data": "galaxynext.utils.onboarding_widget_override.override_onboarding_step_data"
+# }
 fixtures = [
-    {
-        "dt": "Client Script",
-        "filters": [["name", "in", [
-            "project script",
-            "customer testing script",
-            "supplier testing script",
-            "jab card testing client script",
-	        "work order client script",
-            "campaign client script",
-            "opportunity client script",
-            "lead client script",
-            "contract client script",
-            "prospect client script",
-             "testing client script",
-            "testing web client script",
-            "test script",
-	    "doctype client script",
-	    "doctype testing client script",
-         "GERP client script",
-       "GERPNext client script",
-           "ERPNext client script"
-
-        ]]]
-    },
-    {
-        "dt": "Server Script",
-        "filters": [["name", "in", [
-            "job card test server script",
-            "testing server script"
-        ]]]
-    }
+	{
+		"dt":"Client Script",
+		"filters":[["name","in",[
+			"Quantity validation for job inward",
+			"click",
+			"Auto Ganareted",
+			"unit",
+			"Job Inward companywise warehouse",
+			"Job Date"
+	    ]]]
+	}
 ]
