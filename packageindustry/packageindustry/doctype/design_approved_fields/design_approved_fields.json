@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-25 17:06:11.841163",
+ "custom": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "upload_final_photo",
+  "send_final_file_to_mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "upload_final_photo",
+   "fieldtype": "Attach",
+   "label": "Upload Final Photo "
+  },
+  {
+   "fieldname": "send_final_file_to_mobile_no",
+   "fieldtype": "Data",
+   "label": "Send Final File To Mobile No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-25 17:06:51.080947",
+ "modified_by": "Administrator",
+ "module": "packageindustry",
+ "name": "Design Approved Fields",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

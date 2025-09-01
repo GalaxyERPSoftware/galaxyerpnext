@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-23 15:23:20.391829",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "email_id",
+  "whatsapp_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Data",
+   "label": "WhatsApp Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-28 15:29:39.071170",
+ "modified_by": "Administrator",
+ "module": "packageindustry",
+ "name": "Send Catalogue Fields",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
